@@ -17,6 +17,7 @@ This repo is the single source for the owner's agent skills, and it is public.
 Run these before committing:
 
 ```bash
+bash tests/test_install.sh
 bash -n install.sh
 ./install.sh --home "$(mktemp -d)" --apply
 python3 -I skills/retro/scripts/test_retro_digest.py
