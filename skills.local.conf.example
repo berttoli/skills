@@ -1,0 +1,6 @@
+# Copy to skills.local.conf (gitignored) for skills that live in another
+# checkout on this machine. Paths here are machine-specific, so this file is
+# never committed.
+# Format: <name> <absolute path to the skill folder> [targets]
+#
+# ytd /absolute/path/to/ytd/skills/ytd all
