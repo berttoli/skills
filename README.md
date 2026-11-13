@@ -12,9 +12,17 @@ Each skill is a folder under `skills/` with a `SKILL.md`: frontmatter with `name
 | [diagnosing-bugs](skills/diagnosing-bugs/SKILL.md) | A loop for hard bugs: get a command that goes red on the bug before forming theories | mattpocock/skills, MIT |
 | [grilling](skills/grilling/SKILL.md) | Questions a plan in numbered rounds, each with a recommended answer | mattpocock/skills, MIT |
 | [tdd](skills/tdd/SKILL.md) | Red-green loop, one test at a time, at seams agreed up front | mattpocock/skills, MIT |
+| [cli-for-agents](skills/cli-for-agents/SKILL.md) | Design and review CLIs for unattended agents, safe retries and useful output | [cursor/plugins](https://github.com/cursor/plugins/tree/246bc508c139c5e036dfafea8978d31a7433279f/cli-for-agent), MIT; adapted |
+| [create-verification-skill](skills/create-verification-skill/SKILL.md) | Generate and exercise a project-local app verification skill for Codex, Claude Code, or both | [cursor/plugins](https://github.com/cursor/plugins/tree/246bc508c139c5e036dfafea8978d31a7433279f/pstack), MIT; adapted |
 | [retro](skills/retro/SKILL.md) | Reviews recent Claude Code sessions for avoidable round trips and saves the lessons | This repo. Claude Code only |
 
 Vendored skills keep their upstream `LICENSE` and a `.source` file with the upstream URL, commit and copy date.
+
+`cli-for-agents` can be selected automatically for CLI design work. Invoke `create-verification-skill` explicitly (`$create-verification-skill` in Codex or `/create-verification-skill` in Claude Code). Its generated verification skills live with the application they describe; for both agents, it uses one source under `.agents/skills` with a relative link from `.claude/skills`.
+
+## What belongs here
+
+Keep reusable, agent-independent workflows in this repo. Keep skills that document a particular CLI beside that CLI and link them through `skills.local.conf`. Generated app verification skills, project design rules, and tool-managed skill bundles stay with their owning project or installer. This avoids two competing copies of the same instructions.
 
 ## Install
 

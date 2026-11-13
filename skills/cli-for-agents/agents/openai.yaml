@@ -1,0 +1,3 @@
+interface:
+  display_name: "CLI for Agents"
+  short_description: "Design CLIs for reliable agent use"

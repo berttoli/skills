@@ -1,0 +1,11 @@
+source: https://github.com/cursor/plugins
+path: cli-for-agent/skills/cli-for-agents
+commit: 246bc508c139c5e036dfafea8978d31a7433279f
+license: MIT
+copied: 2026-11-12
+changes:
+  - Narrowed discovery to CLI work instead of generic mentions of agents or terminals.
+  - Limited interactive fallback to explicit terminal use to prevent unattended hangs.
+  - Clarified retry identity, dry-run side effects, authorization and output/exit contracts.
+  - Added Codex interface metadata; the instructions also work in Claude Code.
+  - Replaced a Markdown trailing-space break with a blank line for diff hygiene.

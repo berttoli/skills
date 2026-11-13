@@ -1,0 +1,12 @@
+source: https://github.com/cursor/plugins
+path: pstack/skills/create-verification-skill
+commit: 246bc508c139c5e036dfafea8978d31a7433279f
+license: MIT
+copied: 2026-11-12
+changes:
+  - Replaced Cursor-only output paths with Codex, Claude Code and shared-source layouts.
+  - Added collision checks and scope boundaries for application driving and evidence.
+  - Identified bundled Notes examples as illustrative rather than installed tooling.
+  - Replaced the unavailable maintenance companion with a self-contained procedure.
+  - Preserved explicit invocation in Claude and added matching Codex policy metadata.
+  - Kept the upstream feature-map examples unchanged.
